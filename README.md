@@ -51,3 +51,5 @@ PUT	/api/tasks/:id	Update a task (supports conflict 409)
 DELETE	/api/tasks/:id	Delete a task
 POST	/api/tasks/:id/smart-assign	Smart-assign logic
 GET	/api/actions	Fetch last 20 activity logs
+
+x-auth-token: <your_jwt_here>
