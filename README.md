@@ -40,3 +40,14 @@ PORT=5000
 
 npm run dev ### for devlopment
 npm start ### for build
+
+📑 API Endpoints
+Method	Route	Description
+POST	/api/auth/register	Register new user
+POST	/api/auth/login	Authenticate & get JWT
+GET	/api/tasks	List all tasks (requires JWT)
+POST	/api/tasks	Create a new task
+PUT	/api/tasks/:id	Update a task (supports conflict 409)
+DELETE	/api/tasks/:id	Delete a task
+POST	/api/tasks/:id/smart-assign	Smart-assign logic
+GET	/api/actions	Fetch last 20 activity logs
